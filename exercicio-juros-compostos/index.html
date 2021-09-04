@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Juros Compostos</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="bg"></div>
+    <div class="container formulario">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+
+
+        <div class="row justify-content-center text-white mt-1" id="infos">
+            <div class="col-6">
+                <form class="d-flex justify-content-center flex-column">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Nome</label>
+                      <input type="text" class="form-control nome" id="nome">
+                    </div>
+                    <div class="mb-3">
+                      <label for="mensalidade" class="form-label">Mensalidade</label>
+                      <input type="number" class="form-control mensalidade" id="mensalidade">
+                    </div>
+                    <div class="mb-3">
+                      <label for="tempo" class="form-label">Data</label>
+                      <input type="number" class="form-control tempo" id="tempo">
+                    </div>
+                    <button type="submit" class="btn btn-outline-light" onclick="resultado(); return false">Simular</button>
+                  </form>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center d-none result mt-3"  id="result">
+          <div class="col-6">
+            <div class="text-center text-white">
+              <p class="text-break fs-2"> Olá <span class="nameresult" id="nameresult">...</span>, juntando R$
+                <span class="mensalresult" id="mensalresult">...</span> por mês, você terá R$
+                <span class="formula" id="formula">...</span> em <span class="data" id="data">...</span> meses</p>
+                <button type="submit" class="btn btn-outline-light mt-3" onclick="voltar(); return false;">Voltar</button>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>

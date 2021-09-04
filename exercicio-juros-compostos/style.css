@@ -1,0 +1,29 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-color: #20c997 !important;
+
+}
+
+.bg {
+    padding: 20px;
+    background-color: white;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 200px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
